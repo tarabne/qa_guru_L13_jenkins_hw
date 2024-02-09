@@ -23,7 +23,7 @@ allure {
 
 java {
     toolchain {
-        languageVersion = JavaLanguageVersion.of(17)
+        languageVersion = JavaLanguageVersion.of(19)
     }
 }
 
@@ -47,7 +47,6 @@ test {
 
 tasks.withType(Test) {
     useJUnitPlatform()
-    systemProperties(System.getProperties())
 
     testLogging {
         lifecycle {
