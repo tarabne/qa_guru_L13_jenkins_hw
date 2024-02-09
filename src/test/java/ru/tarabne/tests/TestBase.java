@@ -10,5 +10,7 @@ public class TestBase {
         Configuration.baseUrl = "https://demoqa.com";
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wb/hub";
+        Configuration.browser = "chrome";
+        Configuration.browserVersion = "100.0";
     }
 }
