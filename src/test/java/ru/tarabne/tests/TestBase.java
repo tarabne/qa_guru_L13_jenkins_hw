@@ -11,6 +11,6 @@ public class TestBase {
         Configuration.pageLoadStrategy = "eager";
         Configuration.remote = "https://user1:1234@selenoid.autotests.cloud/wb/hub";
         Configuration.browser = "chrome";
-        Configuration.browserVersion = "100.0";
+        Configuration.browserVersion = "100";
     }
 }
