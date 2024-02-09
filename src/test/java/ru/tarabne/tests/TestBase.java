@@ -20,13 +20,13 @@ public class TestBase {
         Configuration.browser = "chrome";
         Configuration.browserVersion = "100";
 
-        SelenideLogger.addListener("allure", new AllureSelenide());
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability("selenoid:options", Map.<String, Object>of(
                 "enableVNC", true,
                 "enableVideo", true
         ));
         Configuration.browserCapabilities = capabilities;
+        SelenideLogger.addListener("allure", new AllureSelenide());
     }
 
     @AfterEach
