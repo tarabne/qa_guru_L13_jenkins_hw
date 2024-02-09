@@ -21,6 +21,12 @@ allure {
     }
 }
 
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -29,7 +35,7 @@ dependencies {
     testImplementation(
             'com.github.javafaker:javafaker:1.0.2',
             'org.junit.jupiter:junit-jupiter:5.10.1',
-            'com.codeborne:selenide:6.9.1',
+            'com.codeborne:selenide:7.0.4',
             'io.qameta.allure:allure-selenide:2.25.0'
     )
 }
