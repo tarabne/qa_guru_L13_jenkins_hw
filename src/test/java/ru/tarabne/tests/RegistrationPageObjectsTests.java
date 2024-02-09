@@ -1,6 +1,7 @@
 package ru.tarabne.tests;
 
 import org.junit.jupiter.api.DisplayName;
+import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 import ru.tarabne.pages.RegistrationPage;
 import ru.tarabne.testdata.RegistrationTestData;
@@ -12,6 +13,7 @@ public class RegistrationPageObjectsTests extends TestBase {
     RegistrationTestData registrationTestData = new RegistrationTestData();
 
     @Test
+    @Tag("simple")
     @DisplayName("Регистрация студента со всеми полями")
     void fillFullFormTest() {
         registrationPage.openPage()
@@ -45,6 +47,7 @@ public class RegistrationPageObjectsTests extends TestBase {
     }
 
     @Test
+    @Tag("simple")
     @DisplayName("Регистрация студента с заполнением только обязательных полей")
     void fillOnlyRequiredFieldsFormTest() {
         registrationPage.openPage()
@@ -71,6 +74,7 @@ public class RegistrationPageObjectsTests extends TestBase {
     }
 
     @Test
+    @Tag("simple")
     @DisplayName("Регистрация студента, не заполняя никаких полей")
     void allFieldsAreEmptyTest() {
         registrationPage.openPage()
@@ -81,6 +85,7 @@ public class RegistrationPageObjectsTests extends TestBase {
     }
 
     @Test
+    @Tag("simple")
     @DisplayName("Регистрация студента девятизначным номером телефона")
     void phone9DigitsTest() {
         registrationPage.openPage()
